@@ -232,3 +232,10 @@ h2,.concrete-text{
   font-size: 2rem;
 }
 
+@media (max-width:500px) {
+   
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
