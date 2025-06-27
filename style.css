@@ -18,11 +18,31 @@ h1,
 .transform {
   position: absolute;
   top: 18%;
+  animation: fromleft 2s ease-in-out;
 }
 .home-text {
   position: absolute;
   top: 25%;
+  animation: fromright 2s ease;
 }
+/* ANIMATION FOR THE TRANSFORM TEXT AND HOME-TEXT  */
+@keyframes fromleft {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes fromright {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
 .second-section {
   /* background-color: #00d1ff1a; */
   height: auto;
@@ -92,11 +112,8 @@ a {
   }
 }
 
-@media (max-width:500px) {
-   
-    .card {
-        margin-bottom: 1rem;
-    }
+@media (max-width: 500px) {
+  .card {
+    margin-bottom: 1rem;
+  }
 }
-
-
